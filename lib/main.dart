@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Kenzie Sky',
+      title: 'Aplikasi Mahasiswa',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black)
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
       home: HomePage2(),
     );
@@ -27,17 +27,17 @@ class HomePage2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(' Hello der'),
-        backgroundColor: Colors.green,
-        leading: const Icon(Icons.abc),
+        title: const Text('Dashboard Mahasiswa'),
+        backgroundColor: Colors.yellow,
         actions: [
-          Icon(Icons.people),
+          Icon(Icons.access_alarm),
         ],
+        leading: const Icon(Icons.home),
       ),
       body: const Center(
-        child: Text('Kenzie Sky',
-        style: TextStyle(fontSize: 40,
-        color: Colors.red),
+        child: Text('Kennziieeeee',
+        style: TextStyle(fontSize: 20,
+        color: Colors.green),
         ),
       ),
     );
