@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mahasiswa',
+      title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(
         brightness: Brightness.dark,
@@ -18,25 +18,30 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark),
       ),
       themeMode: ThemeMode.dark,
-      home: HomePage2(),
+      home: const ProfilePage2(),
     );
   }
 }
 
-class HomePage2 extends StatelessWidget {
-  const HomePage2({super.key});
+class ProfilePage2 extends StatelessWidget {
+  const ProfilePage2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Halo Selamat Datang'),
-        backgroundColor: Colors.indigo,
+        title: const Text('Halaman Profile'),
+        backgroundColor: Colors.white,
+        actions: [
+          Icon(Icons.ac_unit),
+          Icon(Icons.ac_unit),
+          Icon(Icons.access_time),
+        ],
       ),
       body: const Center(
-        child: Text('Kenzie Sky der',
-        style: TextStyle(fontSize: 25,
-        backgroundColor: Colors.white),
+        child: Text('Kenziieee',
+        style: TextStyle(fontSize: 30,
+        color: Colors.white),
         ),
       ),
     );
