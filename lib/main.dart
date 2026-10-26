@@ -10,11 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Mahasiswa',
       debugShowCheckedModeBanner: false,
-      title: 'Aplikasi Mahasiswa',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black,
+        brightness: Brightness.dark),
       ),
+      themeMode: ThemeMode.dark,
       home: HomePage2(),
     );
   }
@@ -27,17 +30,13 @@ class HomePage2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dashboard Mahasiswa'),
-        backgroundColor: Colors.yellow,
-        actions: [
-          Icon(Icons.access_alarm),
-        ],
-        leading: const Icon(Icons.home),
+        title: const Text('Halo Selamat Datang'),
+        backgroundColor: Colors.indigo,
       ),
       body: const Center(
-        child: Text('Kennziieeeee',
-        style: TextStyle(fontSize: 20,
-        color: Colors.green),
+        child: Text('Kenzie Sky der',
+        style: TextStyle(fontSize: 25,
+        backgroundColor: Colors.white),
         ),
       ),
     );
